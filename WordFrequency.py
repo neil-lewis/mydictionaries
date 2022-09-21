@@ -1,6 +1,6 @@
 with open('sometext.txt') as text:
     for line in text:
-        words = line.split() 
-        uniquewords = dict((word,words.count(word)) for word in set (words))
+        word = line.split() 
+        specifics = dict((word,word.count(word)) for word in set (word))
 
-print(uniquewords)
+print(specifics)
